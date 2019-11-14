@@ -41,11 +41,11 @@ fprintf('Part 2 : Mencari solusi numerik PDB dengan metode Euler \n');
 t_init = 0; %initial condition for t
 t_end = 3; %batas atas integrasi
 y_init = 1; %initial condition for y
-h = 0.1; %lebar selang / step size
+h = 0.2; %lebar selang / step size
 [T,Y] = euler(@(t,y)myode(t,y),t_init,t_end,y_init,h);
 Y(end-1),Y(end)
 fprintf('Kode yang anda kerjakan adalah benar jika dua element terakhir dari vektor Y adalah \n');
-fprintf('4.00482 4.77185 \n');
+fprintf('4.0048 4.7719 \n');
 fprintf('Tekan tombol apapun untuk lanjut\n\n');
 pause;
 
